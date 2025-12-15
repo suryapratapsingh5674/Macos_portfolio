@@ -48,27 +48,44 @@ const Doc = () => {
     const toggleApp = (app) => {
       if(!app.canOpen) return;
 
-      const window = windows[app.id];
+      const win = windows[app.id];
+      if(!win) return;
 
-      if(window.isOpen){
+      // Restore if minimized, close if open, otherwise open fresh
+      if (win.isOpen && win.isMinimized) {
+        openWindow(app.id);
+      } else if (win.isOpen) {
         closeWindow(app.id);
-      }else{
+      } else {
         openWindow(app.id);
       }
-
-      console.log(windows);
     }
 
   return (
     <section id='dock' className='absolute bottom-5 left-1/2 -translate-x-1/2 z-50 select-none max-sm:hidden'>
         <div ref={dockRef} className='dock-container'>
-            {dockApps.map(({id, name, icon, canOpen}) => (
-              <div key={id} className='relatie flex justify-center'>
-                <button type='button' className='dock-icon' aria-label={name} data-tooltip-id="dock-tooltip" data-tooltip-content={name} data-tooltip-delay-show={150} disabled={!canOpen} onClick={()=>toggleApp({id, canOpen})}>
-                  <img src={`/images/${icon}`} alt={name} loading='lazy' className={canOpen? " " : "opacity-60"} />
-                </button>
-              </div>
-            ))}
+            {dockApps.map(({id, name, icon, canOpen}) => {
+              const win = windows[id];
+              const isRunning = win?.isOpen;
+
+              return (
+                <div key={id} className='relatie flex justify-center'>
+                  <button
+                    type='button'
+                    className='dock-icon relative'
+                    aria-label={name}
+                    data-tooltip-id="dock-tooltip"
+                    data-tooltip-content={name}
+                    data-tooltip-delay-show={150}
+                    disabled={!canOpen}
+                    onClick={()=>toggleApp({id, canOpen})}
+                  >
+                    <img src={`/images/${icon}`} alt={name} loading='lazy' className={canOpen? " " : "opacity-60"} />
+                    {isRunning && <span className="dock-indicator" />}
+                  </button>
+                </div>
+              );
+            })}
             <Tooltip id='dock-tooltip' place='top' className='tooltip'/>
         </div>
     </section>
