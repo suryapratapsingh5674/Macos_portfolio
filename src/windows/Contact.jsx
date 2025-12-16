@@ -1,6 +1,7 @@
 import { Windowcontrol } from "#components"
 import { socials } from "#constants";
 import WindowWrapper from "#hoc/WindowWrapper"
+import { Bold } from "lucide-react";
 
 const Contact = () => {
   return (
@@ -11,8 +12,16 @@ const Contact = () => {
     </div>
 
     <div className="p-5 space-y-5">
-        <img src="/images/surya.png" alt="surya" className="w-20 rounded-full" />
-        <h3>Let's connect</h3>
+        <div className="flex items-start justify-items-start gap-10">
+            <div>
+                <img src="/images/gallary/surya.png" alt="surya" className="w-20 rounded-full" />
+                <h3>Let's connect</h3>
+            </div>
+            <div>
+                <h4><b>Name:</b> Surya tomar </h4>
+                <h4><b>Email:</b> suryatomar@zohomail.in </h4>
+            </div>
+        </div>
 
         <ul>
             {socials.map(({id, bg, link, text, icon})=>(

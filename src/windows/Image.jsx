@@ -20,12 +20,12 @@ const Image = () => {
         <h2>{name}</h2>
       </div>
 
-      <div className="bg-white text-black p-4 w-full max-w-[720px] min-w-[320px] box-border max-h-[70vh] overflow-auto">
+      <div className="preview bg-white text-black p-4 w-full box-border overflow-auto">
         <div className="w-full h-full flex items-center justify-center">
           <img
             src={src}
             alt={name}
-            className="max-w-full max-h-[60vh] object-contain rounded-md"
+            className="max-w-[70vw] max-h-[50vh] object-contain rounded-md"
           />
         </div>
       </div>
