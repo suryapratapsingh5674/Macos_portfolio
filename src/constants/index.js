@@ -329,7 +329,7 @@ const WORK_LOCATION = {
     // ▶ Project 3
     {
       id: 7,
-      name: "Ochi Studio — Animated Agency Website Clone",
+      name: "Foodly — Full Stack Food Delivery App",
       icon: "/images/folder.png",
       kind: "folder",
       position: "top-10 left-80",
@@ -337,31 +337,31 @@ const WORK_LOCATION = {
       children: [
         {
           id: 1,
-          name: "Ochi Studio — Animated Agency Website Clone.txt",
+          name: "Foodly — Full Stack Food Delivery App.txt",
           icon: "/images/txt.png",
           kind: "file",
           fileType: "txt",
           position: "top-5 left-10",
           description: [
-            "Ochi Studio is a high-fidelity clone of a modern digital agency website, focused on smooth animations, bold typography, and immersive user interactions.",
-            "The project recreates the look and feel of a high-end creative studio site, featuring scroll-based animations, fluid transitions, and carefully timed motion effects. Instead of static sections, the interface feels alive — responding naturally as the user scrolls and navigates.",
-            "Built using modern frontend tools, the application emphasizes animation performance, layout precision, and responsive design across screen sizes. Special attention was given to motion timing, easing, and visual hierarchy to match a real agency-level experience.",
-            "Think of it as a motion-first frontend showcase, not just a layout clone.",
-            "Tech Stack: HTML, CSS, JavaScript, GSAP, Locomotive Scroll"
+            "Foodly is a full stack food delivery web application that lets users browse restaurants, view menus, place food orders, and track order status in real time.",
+            "The frontend offers a responsive and user-friendly interface for discovering dishes, filtering by category or restaurant, adding items to cart, and checking out with seamless navigation and state management.",
+            "The backend powers user authentication, restaurant and menu data, order creation, and secure order handling with REST APIs. It manages data persistence, session control, and route protection for both customers and admin roles.",
+            "Designed as a real-world clone of a food ordering platform, this project demonstrates CRUD operations, API integration, user flows, and full stack architecture.",
+            "Tech Stack: React (frontend), Node.js + Express (backend), MongoDB (database), REST APIs, and JWT for auth."
           ],
         },
         {
           id: 2,
-          name: "Ochi-clone.com",
+          name: "Foodly.com",
           icon: "/images/safari.png",
           kind: "file",
           fileType: "url",
-          href: "https://suryapratapsingh5674.github.io/Ochi-Clone/",
+          href: "https://foodly-frontend-brown.vercel.app/",
           position: "top-5 left-49",
         },
         {
           id: 4,
-          name: "Ochi-clone.png",
+          name: "Foodly.png",
           icon: "/images/image.png",
           kind: "file",
           fileType: "img",
