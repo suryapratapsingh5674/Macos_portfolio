@@ -237,7 +237,7 @@ const WORK_LOCATION = {
             "Instead of being a basic list-based app, CineScope focuses on rich discovery — detailed pages with trailers, cast information, social links, and direct access to IMDb, Wikidata, and official websites.",
             "The application features category-based browsing, a global search system, dynamic routing, and a clean UI powered by modern frontend tools. State management is handled using Redux Toolkit, with Axios for API communication and smooth scrolling via Lenis.",
             "Think of it as a lightweight IMDb-style experience — fast, visual, and focused on exploration rather than clutter.",
-            "Tech Stack:React.js, Redux Toolkit, TMDB API, Axios, Tailwind CSS, Lenis"
+            "Tech Stack:React.js, Redux Toolkit, TMDB API, Axios, Tailwind CSS, Lenis",
           ],
         },
         {
@@ -293,7 +293,7 @@ const WORK_LOCATION = {
             "Behind the scenes, the app handles redirection efficiently, ensuring fast response times and consistent behavior.",
             "The project is built to demonstrate core backend concepts such as routing, request handling, data storage, and URL redirection logic, while keeping the frontend minimal and functional.",
             "Think of it as a stripped-down version of Bitly — focused on function first, polish second.",
-            "Tech Stack (adjust if needed): JavaScript, Node.js, Express.js, MongoDB (or whatever you actually used)"
+            "Tech Stack (adjust if needed): JavaScript, Node.js, Express.js, MongoDB (or whatever you actually used)",
           ],
         },
         {
@@ -347,7 +347,7 @@ const WORK_LOCATION = {
             "The frontend offers a responsive and user-friendly interface for discovering dishes, filtering by category or restaurant, adding items to cart, and checking out with seamless navigation and state management.",
             "The backend powers user authentication, restaurant and menu data, order creation, and secure order handling with REST APIs. It manages data persistence, session control, and route protection for both customers and admin roles.",
             "Designed as a real-world clone of a food ordering platform, this project demonstrates CRUD operations, API integration, user flows, and full stack architecture.",
-            "Tech Stack: React (frontend), Node.js + Express (backend), MongoDB (database), REST APIs, and JWT for auth."
+            "Tech Stack: React (frontend), Node.js + Express (backend), MongoDB (database), REST APIs, and JWT for auth.",
           ],
         },
         {
@@ -367,6 +367,60 @@ const WORK_LOCATION = {
           fileType: "img",
           position: "top-5 right-20",
           imageUrl: "/images/project-3.png",
+        },
+        // {
+        //   id: 5,
+        //   name: "Design.fig",
+        //   icon: "/images/plain.png",
+        //   kind: "file",
+        //   fileType: "fig",
+        //   href: "https://google.com",
+        //   position: "top-60 right-20",
+        // },
+      ],
+    },
+
+    // ▶ Project 4
+    {
+      id: 7,
+      name: "Resumind-ai resume analyzer",
+      icon: "/images/folder.png",
+      kind: "folder",
+      position: "top-10 left-80",
+      windowPosition: "top-5 left-7",
+      children: [
+        {
+          id: 1,
+          name: "Resumind - Ai resume analyzer.txt",
+          icon: "/images/txt.png",
+          kind: "file",
+          fileType: "txt",
+          position: "top-5 left-10",
+          description: [
+            "AI Resume Analyzer is a full stack web application that evaluates resumes using AI to provide practical, hiring-focused feedback.",
+            "The frontend delivers a clean and intuitive interface where users can upload resumes, view analysis results, and understand strengths, weaknesses, and improvement areas in a clear, structured format.",
+            "The backend handles resume processing, AI-based evaluation, and secure API communication. It manages requests, data flow, and response generation with proper error handling and scalability in mind.",
+            "Built to simulate real-world resume screening, this project demonstrates AI integration, prompt engineering, API-driven architecture, and full stack problem solving.",
+            "Tech Stack: React (frontend), Node.js + Express (backend), AI API integration, REST APIs, and modern UI practices.",
+          ],
+        },
+        {
+          id: 2,
+          name: "Resumind.com",
+          icon: "/images/safari.png",
+          kind: "file",
+          fileType: "url",
+          href: "https://ai-resume-analyzer-neon.vercel.app/",
+          position: "top-5 left-49",
+        },
+        {
+          id: 4,
+          name: "Resumind.png",
+          icon: "/images/image.png",
+          kind: "file",
+          fileType: "img",
+          position: "top-5 right-20",
+          imageUrl: "/images/project-4.png",
         },
         // {
         //   id: 5,
