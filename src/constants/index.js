@@ -382,11 +382,11 @@ const WORK_LOCATION = {
 
     // ▶ Project 4
     {
-      id: 7,
+      id: 8,
       name: "Resumind-ai resume analyzer",
       icon: "/images/folder.png",
       kind: "folder",
-      position: "top-10 left-80",
+      position: "top-40 left-5",
       windowPosition: "top-5 left-7",
       children: [
         {
